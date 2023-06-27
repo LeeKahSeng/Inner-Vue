@@ -32,7 +32,7 @@ class DatingAppConfiguration: DatingInAppConfigurationProtocol {
                                                 endDate: Calendar.current.date(byAdding: .day, value: 7, to: Date()),
                                                 type: .freeTrialAutoRenewableSubscription)
     // This property is used for limiting number of swipes per day for non-VIP users
-    var numberOfSwipes = 25
+    var numberOfSwipes = 100
     
     // data for carousel views in upgrade views
     var carouselData = [

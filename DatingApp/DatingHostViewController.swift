@@ -129,8 +129,8 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
                                                          title: "Find your perfect job".localizedInApp,
                                                          subtitle: "Match and chat with people you like to work for.".localizedInApp,
                                                          loginString: "Log In".localizedInApp,
-                                                         signUpString: "Sign Up".localizedInApp,
-                                                         signUp2String: "Sign Up as Employer")
+                                                         signUpString: "Sign Up".localizedInApp
+                                                        )
             
                                                     
                                                 

@@ -1,6 +1,1711 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:Core"
+      name = "Core">
+      <Group
+         location = "group:Core/IAP"
+         name = "IAP">
+         <Group
+            location = "group:Core/IAP/ATCIAPService"
+            name = "ATCIAPService">
+            <FileRef
+               location = "group:Core/IAP/ATCIAPService/ATCIAPService.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/IAP/ATCIAPService/ATCInAppPurchaseDelegate.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/IAP/Models"
+            name = "Models">
+            <FileRef
+               location = "group:Core/IAP/Models/ATCSubscription.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/ReusableSwiftUI"
+         name = "ReusableSwiftUI">
+         <Group
+            location = "group:Core/ReusableSwiftUI/UpgradeAccountView"
+            name = "UpgradeAccountView">
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountBottomView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountCheckboxView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountConfigurationUIProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountConsumerTypesView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountConsumerTypeView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountView.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/ReusableSwiftUI/CarouselView"
+            name = "CarouselView">
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/CarouselView/ATCCarouselModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/CarouselView/ATCCarouselView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/CarouselView/ATCPageControlView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/CarouselView/ATCPageView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ReusableSwiftUI/CarouselView/ATCPageViewController.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/Cupertino"
+         name = "Cupertino">
+         <Group
+            location = "group:Core/Cupertino/ATCMentionsUserView"
+            name = "ATCMentionsUserView">
+            <FileRef
+               location = "group:Core/Cupertino/ATCMentionsUserView/ATCMentionsTypeaheadViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Cupertino/ATCMentionsUserView/ATCMentionsTypeaheadViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Cupertino/ATCMentionsUserView/ATCMentionsUserTableViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Cupertino/ATCMentionsUserView/ATCMentionsUserTableViewCell.xib">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Cupertino/PlayerView"
+            name = "PlayerView">
+            <FileRef
+               location = "group:Core/Cupertino/PlayerView/VideoPlayerView.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Cupertino/ATCFacepileView"
+            name = "ATCFacepileView">
+            <FileRef
+               location = "group:Core/Cupertino/ATCFacepileView/ATCFacepileView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Cupertino/ATCFacepileView/ATCFacepileView.xib">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Cupertino/CupertinoHUD"
+            name = "CupertinoHUD">
+            <FileRef
+               location = "group:Core/Cupertino/CupertinoHUD/CPKProgressHUD.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Cupertino/EmptyView"
+            name = "EmptyView">
+            <FileRef
+               location = "group:Core/Cupertino/EmptyView/CPKEmptyView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Cupertino/EmptyView/CPKEmptyViewModel.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/Social"
+         name = "Social">
+         <FileRef
+            location = "group:Core/Social/Firebase/ATCFirebaseSocialGraphManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Social/ATCSocialGraphManagerProtocol.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/UserManagement"
+         name = "UserManagement">
+         <Group
+            location = "group:Core/UserManagement/Firebase"
+            name = "Firebase">
+            <FileRef
+               location = "group:Core/UserManagement/Firebase/ATCSocialFirebaseUserManager.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/UserManagement/ATCSocialUserManagerProtocol.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Location"
+         name = "Location">
+         <FileRef
+            location = "group:Core/Location/ATCLocationManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Location/ATCLocation.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Profile"
+         name = "Profile">
+         <FileRef
+            location = "group:Core/Profile/ATCFirebaseProfileManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Profile/ATCProfileManager.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Chat"
+         name = "Chat">
+         <Group
+            location = "group:Core/Chat"
+            name = "ATCChatLocalizable.strings">
+            <FileRef
+               location = "group:Core/Chat/ar.lproj/ATCChatLocalizable.strings">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Chat/Models"
+            name = "Models">
+            <FileRef
+               location = "group:Core/Chat/Models/ATCChatChannel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Models/ATChatMessage.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Models/ATCChatFriendship.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Models/ATCChatUserSelectionViewModel.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Chat/Adapters"
+            name = "Adapters">
+            <FileRef
+               location = "group:Core/Chat/Adapters/ATCFriendshipRowAdapter.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Adapters/ATCChatGroupSelectionAdapter.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Adapters/ATCChatThreadAdapter.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Adapters/ATCFriendsAdapter.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Chat/ViewControllers"
+            name = "ViewControllers">
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatGroupCreationViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatGroupMembersTableViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatGroupMembersTableViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatGroupMembersViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatGroupMembersViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatGroupUpdateViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatImageViewer.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatContactViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatThreadViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatAccountDetailsViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/ViewControllers/ATCChatThreadsViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Chat/Themes"
+            name = "Themes">
+            <Group
+               location = "group:Core/Chat/Themes/Messenger"
+               name = "Messenger">
+               <FileRef
+                  location = "group:Core/Chat/Themes/Messenger/ATCThreadCollectionViewCell.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Chat/Themes/Messenger/ATCThreadCollectionViewCell.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/Chat/Helpers"
+            name = "Helpers">
+            <FileRef
+               location = "group:Core/Chat/Helpers/ATCChatFriendsSelectionDataSource.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Helpers/ATCChatNewFriendsSelectionDataSource.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Helpers/ATCChatFirebaseChannelDataSource.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Chat/Helpers/ATCChatFirebaseManager.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Chat/Store"
+            name = "Store">
+            <FileRef
+               location = "group:Core/Chat/Store/ATCChatMockStore.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/UserReporting"
+         name = "UserReporting">
+         <Group
+            location = "group:Core/UserReporting/Firebase"
+            name = "Firebase">
+            <FileRef
+               location = "group:Core/UserReporting/Firebase/ATCFirebaseUserReporter.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/UserReporting/ATCUserReportingProtocol.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Instagram"
+         name = "Instagram">
+         <FileRef
+            location = "group:Core/Instagram/ATCInstagramConfig.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Instagram/ATCInstagramAuthenticatorViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Instagram/ATCInstagramPhotoImporter.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/PushNotifications"
+         name = "PushNotifications">
+         <FileRef
+            location = "group:Core/PushNotifications/ATCPushNotificationManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/PushNotifications/ATCPushNotificationSender.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/UIKit"
+         name = "UIKit">
+         <Group
+            location = "group:Core/UIKit/Profile"
+            name = "Profile">
+            <Group
+               location = "group:Core/UIKit/Profile/Cells"
+               name = "Cells">
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Cells/ATCProfileItemCollectionViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Cells/ATCProfileItemCollectionViewCell.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Cells/ATCProfileButtonCollectionViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Cells/ATCProfileButtonCollectionViewCell.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/UIKit/Profile/Models"
+               name = "Models">
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Models/ATCProfileButtonItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Models/ATCProfileItem.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/UIKit/Profile/Adapters"
+               name = "Adapters">
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Adapters/ATCProfileButtonItemRowAdapter.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Adapters/ATCProfileItemRowAdapter.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/UIKit/Profile/Controllers"
+               name = "Controllers">
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Controllers/ATCProfileFirebaseUpdater.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Profile/Controllers/ATCProfileUpdaterProtocol.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Core/UIKit/Profile/ATCProfileViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/UIKit/Settings"
+            name = "Settings">
+            <FileRef
+               location = "group:Core/UIKit/Settings/ATCDatingSettingsViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/UIKit/Settings/ATCSettingsContactUsViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/UIKit/PageControls"
+            name = "PageControls">
+            <FileRef
+               location = "group:Core/UIKit/PageControls/InstaLinePageControl.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/UIKit/Carousels"
+            name = "Carousels">
+            <Group
+               location = "group:Core/UIKit/Carousels/InstaMultiRowPageCarousel"
+               name = "InstaMultiRowPageCarousel">
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/InstaMultiRowPageCarousel/InstaMultiRowPageCarouselCollectionViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/InstaMultiRowPageCarousel/InstaMultiRowPageCarouselCollectionViewCell.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/InstaMultiRowPageCarousel/InstaMultiRowPageCarouselViewModel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/InstaMultiRowPageCarousel/InstaMultiRowPageCarouselRowAdapter.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/UIKit/Carousels/TopLinedPageCarousel"
+               name = "TopLinedPageCarousel">
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/TopLinedPageCarousel/InstaTopLinedPageCarouselCollectionViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/TopLinedPageCarousel/InstaTopLinedPageCarouselCollectionViewCell.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/TopLinedPageCarousel/InstaTopLinedPageCarouselRowAdapter.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/UIKit/Carousels/TopLinedPageCarousel/InstaLinedPageCarouselViewModel.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/UIKit/Buttons"
+            name = "Buttons">
+            <FileRef
+               location = "group:Core/UIKit/Buttons/ATCDismissButton.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/UIKit/Buttons/InstaRoundImageButton.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/UIKit/Buttons/InstaBorderedButton.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/Dating"
+         name = "Dating">
+         <Group
+            location = "group:Core/Dating/UI"
+            name = "UI">
+            <FileRef
+               location = "group:Core/Dating/UI/ATCUserStoryCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Dating/UI/ATCUserStoryCollectionViewCell.xib">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Dating/Models"
+            name = "Models">
+            <FileRef
+               location = "group:Core/Dating/Models/ATCDatingProfile.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Dating/Models/ATCDatingSwipe.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFeedDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFeedMockDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCWalkthroughStore.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingChatHomeViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingMatchesDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingChatUserStoryAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingItsAMatchNotificationSender.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFeedFirebaseDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingSwipeManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFirebaseSwipeManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingAccountDetailsViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingProfileEditManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFirebaseProfileEditManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFirebaseMatchesDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Dating/ATCDatingFirebaseSocialGraphManager.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Networking"
+         name = "Networking">
+         <FileRef
+            location = "group:Core/Networking/ATCNetworkingManager.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Models"
+         name = "Models">
+         <FileRef
+            location = "group:Core/Models/ATCFacebookUser.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCText.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCImage.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCViewControllerContainerViewModel.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCWalkthroughModel.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCDivider.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCSearchBar.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCFacebookPost.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Models/ATCUser.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/UIExtensions"
+         name = "UIExtensions">
+         <FileRef
+            location = "group:Core/UIExtensions/UIScrollView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/Date.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/UIView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/UIColor.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/UITextField.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/String.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/UIButton.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/UIImage.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/UIExtensions/Double.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Adapters"
+         name = "Adapters">
+         <FileRef
+            location = "group:Core/Adapters/ATCTextRowAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Adapters/ATCStoryAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Adapters/ATCDividerRowAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Adapters/ATCViewControllerContainerRowAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Adapters/ATCCarouselAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Adapters/ATCSearchBarAdapter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Adapters/ATCImageRowAdapter.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/ViewControllers"
+         name = "ViewControllers">
+         <FileRef
+            location = "group:Core/ViewControllers/ATCWebViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/ViewControllers/UIViewController+ATCAdditions.swift">
+         </FileRef>
+         <Group
+            location = "group:Core/ViewControllers/Navigation"
+            name = "Navigation">
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCHostViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCNavigationController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuItemCollectionViewCellProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCDrawerController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuTableViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuCollectionViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuTableViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuHeaderTableViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuHeaderTableViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Navigation/ATCMenuItemRowAdapter.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/ViewControllers/Walkthrough"
+            name = "Walkthrough">
+            <FileRef
+               location = "group:Core/ViewControllers/Walkthrough/ATCWalkthroughViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Walkthrough/ATCWalkthroughViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Walkthrough/ATCClassicWalkthroughViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Walkthrough/ATCClassicWalkthroughViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/ViewControllers/ATCGenericCollectionViewController.swift">
+         </FileRef>
+         <Group
+            location = "group:Core/ViewControllers/Profile"
+            name = "Profile">
+            <FileRef
+               location = "group:Core/ViewControllers/Profile/ATCProfileScreenProtocol.swift">
+            </FileRef>
+            <Group
+               location = "group:Core/ViewControllers/Profile/Themes"
+               name = "Themes">
+               <FileRef
+                  location = "group:Core/ViewControllers/Profile/Themes/ATCProfileBasicViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ViewControllers/Profile/Themes/ATCProfileBasicViewController.xib">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/ViewControllers/Layouts"
+            name = "Layouts">
+            <FileRef
+               location = "group:Core/ViewControllers/Layouts/ATCLiquidCollectionViewLayout.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ViewControllers/Layouts/ATCCollectionViewFlowLayout.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/ViewControllers/ATCGenericSearchViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/ViewControllers/ATCViewControllerFactory.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/API"
+         name = "API">
+         <FileRef
+            location = "group:Core/API/ATCFacebookAPIManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/API/ATCAPIManager.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/Views"
+         name = "Views">
+         <Group
+            location = "group:Core/Views/Cells"
+            name = "Cells">
+            <FileRef
+               location = "group:Core/Views/Cells/ATCRoundImageCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCRoundImageCollectionViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCRoundImageRowAdapter.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCImageCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCStoryCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCViewControllerContainerCollectionViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCImageCollectionViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCDividerCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCStoryCollectionViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCTextCollectionViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCDividerCollectionViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCViewControllerContainerCollectionViewCell.swift">
+            </FileRef>
+            <Group
+               location = "group:Core/Views/Cells/MenuCells"
+               name = "MenuCells">
+               <FileRef
+                  location = "group:Core/Views/Cells/MenuCells/ATCCircledIconMenuCollectionViewCell.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Views/Cells/MenuCells/ATCCircledIconMenuCollectionViewCell.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/Views/Cells/Search"
+               name = "Search">
+               <FileRef
+                  location = "group:Core/Views/Cells/Search/ATCSearchBarCollectionViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Views/Cells/Search/ATCSearchBarCollectionViewCell.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/Views/Cells/Users"
+               name = "Users">
+               <FileRef
+                  location = "group:Core/Views/Cells/Users/ATCMessengerUserCollectionViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Views/Cells/Users/ATCMessengerUserCollectionViewCell.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Views/Cells/Users/ATCMessengerUserAdapter.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCTextCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCCarouselCollectionViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Views/Cells/ATCCarouselCollectionViewCell.xib">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/Views/Controls"
+            name = "Controls">
+            <FileRef
+               location = "group:Core/Views/Controls/ATCTextField.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/Assets"
+         name = "Assets">
+         <FileRef
+            location = "group:Core/Assets/Misc.xcassets">
+         </FileRef>
+         <Group
+            location = "group:Core/Assets/Fonts"
+            name = "Fonts">
+            <Group
+               location = "group:Core/Assets/Fonts/NotoSans"
+               name = "NotoSans">
+               <FileRef
+                  location = "group:Core/Assets/Fonts/NotoSans/NotoSans-Regular.ttf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/NotoSans/NotoSans-Bold.ttf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/NotoSans/NotoSans-BoldItalic.ttf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/NotoSans/LICENSE.txt">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/NotoSans/NotoSans-Italic.ttf">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/Assets/Fonts/Falling-Sky-Extended"
+               name = "Falling-Sky-Extended">
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyCondOuObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyCondOu.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyExt.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyExtObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyCond.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyOuObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyExtOu.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyBdObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyBd.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyOu.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyBlk.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSky.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyCondObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyBlkObl.otf">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Assets/Fonts/Falling-Sky-Extended/FallingSkyExtOuObl.otf">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Core/Helpers"
+         name = "Helpers">
+         <FileRef
+            location = "group:Core/Helpers/ATCHapticsFeedbackGenerator.swift">
+         </FileRef>
+         <Group
+            location = "group:Core/Helpers/Localization"
+            name = "Localization">
+            <Group
+               location = "group:Core/Helpers/Localization"
+               name = "ATCLocalizableCommon.strings">
+               <FileRef
+                  location = "group:Core/Helpers/Localization/ar.lproj/ATCLocalizableCommon.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Core/Helpers/Localization/ATCLocalizationHelper.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/Helpers/ATCGenericLocalHeteroDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCPersistentStore.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCGenericRestAPIDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCGenericLocalDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCFirebaseLoginManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCUIGenericConfigurationProtocol.swift">
+         </FileRef>
+         <Group
+            location = "group:Core/Helpers/Firebase"
+            name = "Firebase">
+            <FileRef
+               location = "group:Core/Helpers/Firebase/ATCFirebaseFirestoreDataSource.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Firebase/ATCFirebaseSearchDataSource.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Firebase/ATCFirebaseFirestoreWriter.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/Helpers/UITabBarItem+ATCAdditions.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/TimeFormatHelper.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCSocialMediaSharingManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCGenericFirebaseDataSource.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCDiskPersistenceStore.swift">
+         </FileRef>
+         <Group
+            location = "group:Core/Helpers/Onboarding"
+            name = "Onboarding">
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCResetPasswordScreenManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCPhoneLoginScreenManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCPhoneSignUpScreenManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/CountryCodePickerTableViewCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/CountryCodePickerTableViewCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/CountryCodePickerViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/CountryCodePickerViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/CountryCodes.json">
+            </FileRef>
+            <Group
+               location = "group:Core/Helpers/Onboarding/UI"
+               name = "UI">
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicResetPasswordViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicResetPasswordViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicPhoneLoginScreenViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicPhoneLoginScreenViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicPhoneSignUpViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicPhoneSignUpViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicSignUpViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicSignUpViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicLandingScreenViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicLandingScreenViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicLoginScreenViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/Helpers/Onboarding/UI/ATCClassicLoginScreenViewController.xib">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCOnboardingServerConfigurationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCOnboardingCoordinator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCLoginScreenManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCLandingScreenProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCSignUpScreenManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCLandingScreenManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCLandingScreenViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/Helpers/Onboarding/ATCOnboardingConfigurationProtocol.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Core/Helpers/UIImage+ATCAdditions.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Core/Helpers/ATCGenericUIConfiguration.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Core/ThirdParty"
+         name = "ThirdParty">
+         <Group
+            location = "group:Core/ThirdParty/ATCAdditions"
+            name = "ATCAdditions">
+            <Group
+               location = "group:Core/ThirdParty/ATCAdditions/MessageKit"
+               name = "MessageKit">
+               <FileRef
+                  location = "group:Core/ThirdParty/ATCAdditions/MessageKit/StatusMessageCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/ATCAdditions/MessageKit/StatusMessageSizeCalculator.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/ThirdParty/InAppPurchase"
+            name = "InAppPurchase">
+            <FileRef
+               location = "group:Core/ThirdParty/InAppPurchase/ATCInAppPurchaseProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/InAppPurchase/ATCInAppPurchaseManager.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/ThirdParty"
+            name = "ATCThirdPartyLocalizable.strings">
+            <FileRef
+               location = "group:Core/ThirdParty/ar.lproj/ATCThirdPartyLocalizable.strings">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Core/ThirdParty/InputBarAccessoryView"
+            name = "InputBarAccessoryView">
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins"
+               name = "Plugins">
+               <Group
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager"
+                  name = "AttachmentManager">
+                  <FileRef
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/AttachmentManager.swift">
+                  </FileRef>
+                  <Group
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Views"
+                     name = "Views">
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Views/AttachmentCell.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Views/AttachmentsView.swift">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Protocols"
+                     name = "Protocols">
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager"
+                  name = "AutocompleteManager">
+                  <FileRef
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/AutocompleteManager.swift">
+                  </FileRef>
+                  <Group
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Models"
+                     name = "Models">
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Models/AutocompleteSession.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Models/AutocompleteCompletion.swift">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Views"
+                     name = "Views">
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Views/AutocompleteTableView.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Views/AutocompleteCell.swift">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Protocols"
+                     name = "Protocols">
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDelegate.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Core/ThirdParty/InputBarAccessoryView/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDataSource.swift">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/KeyboardManager"
+               name = "KeyboardManager">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/KeyboardManager/KeyboardManager.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/KeyboardManager/KeyboardNotification.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/KeyboardManager/KeyboardEvent.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Models"
+               name = "Models">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Models/HorizontalEdgePadding.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Models/NSConstraintLayoutSet.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Extensions"
+               name = "Extensions">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Extensions/NSNotification+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Extensions/String+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Extensions/UITextView+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Extensions/NSMutableAttributedString+Extensions.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Core/ThirdParty/InputBarAccessoryView/InputBarAccessoryView.swift">
+            </FileRef>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Controls"
+               name = "Controls">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Controls/InputBarRecordItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Controls/InputBarButtonItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Controls/InputBarSendButton.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/ViewControllers"
+               name = "ViewControllers">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/ViewControllers/InputBarViewController.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Supporting Files"
+               name = "Supporting Files">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Supporting Files/InputBarAccessoryView-Bridging-Header.h">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Supporting Files/InputBarAccessoryView+Availability.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Views"
+               name = "Views">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Views/InputStackView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Views/InputTextView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Views/SeparatorLine.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/InputBarAccessoryView/Protocols"
+               name = "Protocols">
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Protocols/InputPlugin.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Protocols/InputBarAccessoryViewDelegate.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/InputBarAccessoryView/Protocols/InputItem.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/ThirdParty/MessageKit"
+            name = "MessageKit">
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Layout"
+               name = "Layout">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/CellSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/MessagesCollectionViewLayoutAttributes.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/ContactMessageSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/TypingIndicatorCellSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/MessagesCollectionViewFlowLayout.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/MediaMessageSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/AudioMessageSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/TextMessageSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/LocationMessageSizeCalculator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Layout/MessageSizeCalculator.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Models"
+               name = "Models">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/MessageKitDateFormatter.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/LabelAlignment.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/LocationMessageSnapshotOptions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/AccessoryPosition.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/Sender.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/MessageKind.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/MessageStyle.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/MessageKitError.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/Avatar.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/DetectorType.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/AvatarPosition.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Models/HorizontalEdgeInsets.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Extensions"
+               name = "Extensions">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/UIView+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/UIEdgeInsets+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/UIImage+Extension.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/UIColor+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/NSAttributedString+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/Bundle+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Extensions/CGRect+Extensions.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Supporting"
+               name = "Supporting">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Supporting/MessageKit.h">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Supporting/MessageKit+Availability.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Controllers"
+               name = "Controllers">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Controllers/MessagesViewController+Keyboard.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Controllers/MessagesViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Controllers/MessagesViewController+Menu.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Views"
+               name = "Views">
+               <Group
+                  location = "group:Core/ThirdParty/MessageKit/Views/Cells"
+                  name = "Cells">
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/ContactMessageCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/LocationMessageCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/MediaMessageCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/TextMessageCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/TypingIndicatorCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/MessageContentCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/MessageCollectionViewCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/Cells/AudioMessageCell.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/MessageLabel.swift">
+               </FileRef>
+               <Group
+                  location = "group:Core/ThirdParty/MessageKit/Views/HeadersFooters"
+                  name = "HeadersFooters">
+                  <FileRef
+                     location = "group:Core/ThirdParty/MessageKit/Views/HeadersFooters/MessageReusableView.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/TypingIndicator.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/MessageContainerView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/TypingBubble.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/InsetLabel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/AvatarView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/MessagesCollectionView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/PlayButtonView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Views/BubbleCircle.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Assets"
+               name = "Assets">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/ExampleA.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/InputBarAccessoryViewLayout.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/ExampleB.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/MessageKitAssets.bundle">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/mklogo.svg">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/mklogo.jpg">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/mklogo.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/CellStructure.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Assets/TypingIndicator.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/MessageKit/Protocols"
+               name = "Protocols">
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessageKitLocationItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/ContactItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MediaItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/AudioItem.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessagesLayoutDelegate.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/SenderType.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessageType.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessageCellDelegate.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessageLabelDelegate.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessagesDisplayDelegate.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/MessageKit/Protocols/MessagesDataSource.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/ThirdParty/QuickTableViewController"
+            name = "QuickTableViewController">
+            <FileRef
+               location = "group:Core/ThirdParty/QuickTableViewController/QuickTableViewController.swift">
+            </FileRef>
+            <Group
+               location = "group:Core/ThirdParty/QuickTableViewController/Protocol"
+               name = "Protocol">
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Protocol/Configurable.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Protocol/Reusable.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Protocol/Row.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Protocol/RowStyle.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Protocol/RowCompatible.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/QuickTableViewController/Rows"
+               name = "Rows">
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Rows/OptionRow.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Rows/TapActionRow.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Rows/SwitchRow.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Rows/NavigationRow.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/QuickTableViewController/Model"
+               name = "Model">
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Model/Subtitle.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Model/Icon.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Model/RadioSection.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Model/Deprecated.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Model/Section.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Model/DetailText.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Core/ThirdParty/QuickTableViewController/Views"
+               name = "Views">
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Views/TapActionCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Core/ThirdParty/QuickTableViewController/Views/SwitchCell.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core/ThirdParty/SnapKit"
+            name = "SnapKit">
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMultiplierTarget.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/LayoutConstraintItem.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintDescription.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMakerPriortizable.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintAttributes.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintViewDSL.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintPriorityTarget.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintInsets.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMakerFinalizable.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintDSL.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMakerExtendable.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintPriority.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintInsetTarget.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/SnapKit.h">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintConfig.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/UILayoutSupport+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintLayoutGuide.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintLayoutSupport.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/Typealiases.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintConstantTarget.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintOffsetTarget.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMakerEditable.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMaker.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintRelation.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintLayoutGuideDSL.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintView+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintItem.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/Constraint.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/Debugging.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintRelatableTarget.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/LayoutConstraint.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintLayoutGuide+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintLayoutSupportDSL.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Core/ThirdParty/SnapKit/ConstraintMakerRelatable.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
       location = "group:DatingApp.xcodeproj">
    </FileRef>

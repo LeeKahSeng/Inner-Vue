@@ -1056,8 +1056,7 @@
 				178ECCF921F92A0700E58A80 /* Helpers */,
 				178ECD2121F92A0800E58A80 /* ThirdParty */,
 			);
-			name = Core;
-			path = ../Core;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		178ECBC921F92A0700E58A80 /* Networking */ = {
