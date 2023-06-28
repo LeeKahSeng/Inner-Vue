@@ -92,7 +92,7 @@ class ATCSignUpScreenManager: ATCSignUpScreenDelegate {
             signUpButton.configure(color: uiConfig.loginButtonTextColor,
                                      font: uiConfig.signUpScreenButtonFont,
                                      cornerRadius: 40/2,
-                                     backgroundColor: UIColor(hexString: "#334D92"))
+                                     backgroundColor: UIColor(hexString: "#ADC3A6"))
         }
         if let signUpButton2 = signUpScreen.signUpButton2 {
             signUpButton2.setTitle("Sign Up as Employer", for: .normal)
@@ -100,7 +100,7 @@ class ATCSignUpScreenManager: ATCSignUpScreenDelegate {
             signUpButton2.configure(color: uiConfig.loginButtonTextColor,
                                      font: uiConfig.signUpScreenButtonFont,
                                      cornerRadius: 40/2,
-                                     backgroundColor: UIColor(hexString: "#334D92"))
+                                     backgroundColor: UIColor(hexString: "#ADC3A6"))
         }
     }
 
