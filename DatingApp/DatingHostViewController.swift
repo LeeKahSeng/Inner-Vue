@@ -142,7 +142,7 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
                                                      separatorString: "OR".localizedInApp,
                                                      forgotPasswordString: "Forgot Password".localizedInApp)
         
-        let signUpViewModel = ATCSignUpScreenViewModel(nameField: "Full Name".localizedInApp,
+        let signUpViewModel = ATCSignUpScreenViewModel(nameField: "First Name".localizedInApp,
                                                        phoneField: "Phone Number".localizedInApp,
                                                        emailField: "E-mail Address".localizedInApp,
                                                        passwordField: "Password".localizedInApp,
