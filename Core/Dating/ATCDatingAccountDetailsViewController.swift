@@ -98,39 +98,29 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                     row.title = "Company"
                     row.placeholder = "Company"
                     row.value = datingProfile.school
+                    
                 }
             }
-            <<< ActionSheetRow<String>() {
-                $0.title = "Status"
-                $0.selectorTitle = "Choose your status"
-                $0.options = ["Job Seeker","Recruiter"]
-                $0.value = datingProfile.gender
-                $0.tag = "gender"
-            }
-        <<< ActionSheetRow<String>() {
-            $0.title = "Employment Type"
-            $0.selectorTitle = "Choose your status"
-            $0.options = ["Part time","Full time","Internship","Co-op"]
-            $0.value = datingProfile.gender
-            if user.isAdmin {
-                $0.title = "Hiring"
-                $0.selectorTitle = "Role position"
-            }
-            
-          //$0.tag = "school"
-        }
+       
+      
         <<< ActionSheetRow<String>() {
             $0.title = "Industry"
             $0.selectorTitle = "Choose your desired industry"
             $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
-//            $0.value = datingProfile.gender
-          //  $0.tag = "gender"
+            if user.isAdmin {
+                $0.title = "Hiring for"
+                $0.selectorTitle = "Role position"
+               
+            }
+            $0.value = datingProfile.gender
+           $0.tag = "gender"
         }
             +++ Eureka.Section("Preferences")
             <<< ActionSheetRow<String>() {
-                $0.title = "Status Preference"
+                $0.title = "Looking for"
                 $0.selectorTitle = "Match me with "
-                $0.options = ["Job Seeker", "Recruiter", "Both"]
+                $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
+           
                 $0.value = datingProfile.genderPreference
                 $0.tag = "gender_preference"
             }

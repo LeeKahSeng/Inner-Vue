@@ -96,9 +96,18 @@ class ATCDatingFeedFirebaseDataSource: ATCDatingFeedDataSource {
 
                     // We filter out all users who don't match the gender preference
                     guard let genderPreference = viewer.genderPreference else { return }
-                    if genderPreference != "Both" {
+                    if genderPreference != "All" {
                         users = users.filter({ (profile) -> Bool in
                             return genderPreference == profile.gender
+                        })
+                    }
+                    if viewer.isAdmin == true {
+                        users = users.filter({ (profile) -> Bool in
+                            return profile.isAdmin == false
+                        })
+                    } else {
+                        users = users.filter({ (profile) -> Bool in
+                            return profile.isAdmin == true
                         })
                     }
 
