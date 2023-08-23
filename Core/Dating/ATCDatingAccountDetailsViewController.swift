@@ -89,6 +89,7 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                     row.hidden = true
                 }
             }
+        
             <<< TextRow(){ row in
                 row.title = "School"
                 row.placeholder = "School"
@@ -100,13 +101,14 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                     row.value = datingProfile.school
                 }
             }
-            <<< ActionSheetRow<String>() {
-                $0.title = "Status"
-                $0.selectorTitle = "Choose your status"
-                $0.options = ["Job Seeker","Recruiter"]
-                $0.value = datingProfile.gender
-                $0.tag = "gender"
-            }
+            // MARK: delete if possible
+//        <<< ActionSheetRow<String>() {
+//            $0.title = "Status"
+//            $0.selectorTitle = "Choose your status"
+//            $0.options = ["Job Seeker","Recruiter"]
+//            $0.value = datingProfile.gender
+//            $0.tag = "gender"
+//        }
         <<< ActionSheetRow<String>() {
             $0.title = "Employment Type"
             $0.selectorTitle = "Choose your status"
@@ -125,19 +127,22 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
 //            $0.value = datingProfile.gender
           //  $0.tag = "gender"
+            
         }
-            +++ Eureka.Section("Preferences")
-            <<< ActionSheetRow<String>() {
-                $0.title = "Status Preference"
-                $0.selectorTitle = "Match me with "
-                $0.options = ["Job Seeker", "Recruiter", "Both"]
-                $0.value = datingProfile.genderPreference
-                $0.tag = "gender_preference"
-            }
+//            // MARK: Delete if possible
+//            +++ Eureka.Section("Preferences")
+//            <<< ActionSheetRow<String>() {
+//                $0.title = "Status Preference"
+//                $0.selectorTitle = "Match me with "
+//                $0.options = ["Job Seeker", "Recruiter", "Both"]
+//                $0.value = datingProfile.genderPreference
+//                $0.tag = "gender_preference"
+//            }
+        
             <<< ActionSheetRow<String>() {
                 $0.title = "Location Radius"
                 $0.selectorTitle = "Match me with jobs in this area"
-                $0.options = ["5 miles", "10 miles", "20 miles", "50 miles", "100 miles"]
+                $0.options = ["50 miles", "250 miles", "500 miles", "Anywhere in U.S. (Remote)"]
                 $0.value = datingProfile.locationPreference
                 $0.tag = "location_preference"
             }
@@ -148,7 +153,13 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                 $0.options = ["$40-60K","$60-80K", "$80-100K", "$100K+"]
             //                $0.value = datingProfile.gender
             //                $0.tag = "gender"
+                if user.isAdmin {
+                    $0.title = "Hiring Budget"
+                    $0.selectorTitle = "Select job budget"
+                }
             }
+        
+        
             +++ Eureka.Section("Private Details")
             <<< TextRow(){ row in
                 row.title = "E-mail Address"
@@ -212,14 +223,15 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             locationPreference = row.value ?? ""
         }
 
-        if school == "" || email == "" || age == "" || firstName == "" || gender == "" || genderPreference == "" {
-            let alertVC = UIAlertController(title: "Please complete your profile",
-                                            message: "Fill out all the blank fields",
-                                            preferredStyle: .alert)
-            alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alertVC, animated: true, completion: nil)
-            return
-        }
+        // MARK: Avoid pop up
+//        if school == "" || email == "" || age == "" || firstName == "" || gender == "" || genderPreference == "" {
+//            let alertVC = UIAlertController(title: "Please complete your profile",
+//                                            message: "Fill out all the blank fields",
+//                                            preferredStyle: .alert)
+//            alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//            self.present(alertVC, animated: true, completion: nil)
+//            return
+//        }
         self.manager.update(profile: profile,
                             email: email,
                             firstName: firstName,

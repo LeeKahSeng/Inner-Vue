@@ -251,10 +251,18 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
         if let profile = self.viewer {
             let igPhotoVC = DatingMyPhotosViewController(user: profile, uiConfig: uiConfig, profileUpdater: ATCProfileFirebaseUpdater(usersTable: "users"))
             let cellHeight: CGFloat = ((profile.photos?.count ?? 0) > 2) ? 300.0 : 175.0
-            let igPhotosPageViewModel = InstaMultiRowPageCarouselViewModel(title: "My Photos".localizedInApp, viewController: igPhotoVC, cellHeight: cellHeight)
+            let igPhotosPageViewModel = InstaMultiRowPageCarouselViewModel(title: "My Headshot".localizedInApp, viewController: igPhotoVC, cellHeight: cellHeight)
             igPhotosPageViewModel.parentViewController = self.profileVC
             items.append(igPhotosPageViewModel)
+            
+            let igPhotoVC2 = DatingMyPhotosViewController(user: profile, uiConfig: uiConfig, profileUpdater: ATCProfileFirebaseUpdater(usersTable: "users"))
+            let cellHeight2: CGFloat = ((profile.photos?.count ?? 0) > 2) ? 300.0 : 175.0
+            let igPhotosPageViewModel2 = InstaMultiRowPageCarouselViewModel(title: "My Resume".localizedInApp, viewController: igPhotoVC2, cellHeight: cellHeight2)
+            igPhotosPageViewModel2.parentViewController = self.profileVC
+            items.append(igPhotosPageViewModel2)
         }
+        
+      
         if let profile = self.viewer {
         
             let igPhotoVC = DatingMyVideosViewController(user: profile, uiConfig: uiConfig, profileUpdater: ATCProfileFirebaseUpdater(usersTable: "users"))
@@ -291,7 +299,7 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
     
     fileprivate func chatButton() -> UIButton {
         let chatButton = UIButton()
-        chatButton.configure(icon: UIImage.localImage("chat-filled-icon", template: true), color: UIColor(hexString: "#dadee5"))
+        chatButton.configure(icon: UIImage.localImage("splash2", template: true), color: UIColor(hexString: "#dadee5"))
         chatButton.snp.makeConstraints({ (maker) in
             maker.width.equalTo(60.0)
             maker.height.equalTo(60.0)

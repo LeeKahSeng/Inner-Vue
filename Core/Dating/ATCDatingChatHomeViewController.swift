@@ -160,8 +160,9 @@ class ATCDatingChatHomeViewController: ATCGenericCollectionViewController {
         }
     }
 
+        // change to handshake button
     fileprivate func titleView() -> UIView {
-        let titleView = UIImageView(image: UIImage.localImage("chat-filled-icon", template: true))
+        let titleView = UIImageView(image: UIImage.localImage("splash2", template: true))
         titleView.snp.makeConstraints({ (maker) in
             maker.width.equalTo(30.0)
             maker.height.equalTo(30.0)
