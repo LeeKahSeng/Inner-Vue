@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5E9F255A-EDB8-4D9B-9CC5-E9D21FEEED94"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "983AF75A-EC02-47A1-B2E6-4A300453D9C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Core/Dating/ATCDatingChatHomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "titleView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "983AF75A-EC02-47A1-B2E6-4A300453D9C0 - 8c1dadcbbe991854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DatingApp.ATCDatingChatHomeViewController.titleView() -&gt; __C.UIView"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryceellis/Documents/Production/InnerVue/Core/Dating/ATCDatingChatHomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "983AF75A-EC02-47A1-B2E6-4A300453D9C0 - 4432a1bd0294e078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DatingApp.ConstraintMaker) -&gt; () in DatingApp.ATCDatingChatHomeViewController.titleView() -&gt; __C.UIView"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryceellis/Documents/Production/InnerVue/Core/Dating/ATCDatingChatHomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "983AF75A-EC02-47A1-B2E6-4A300453D9C0 - 8c1dadcbbe991854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DatingApp.ATCDatingChatHomeViewController.titleView() -&gt; __C.UIView"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryceellis/Documents/Production/InnerVue/Core/Dating/ATCDatingChatHomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECE053A5-B576-4F6B-B42D-E26AE3AC1DB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DatingApp/DatingProfileDetailsCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "didTapBackButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4535F746-7D17-44E0-8B8B-227C39C72839"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DatingApp/DatingProfileDetailsCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "didTapBackButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52B423A6-1A9E-407D-A76B-8D09D8AD1A85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DatingApp/DatingProfileDetailsCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

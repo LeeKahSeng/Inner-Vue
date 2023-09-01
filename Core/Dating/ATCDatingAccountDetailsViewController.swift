@@ -99,6 +99,7 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                     row.title = "Company"
                     row.placeholder = "Company"
                     row.value = datingProfile.school
+                    
                 }
             }
             // MARK: delete if possible
@@ -118,9 +119,8 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                 $0.title = "Hiring"
                 $0.selectorTitle = "Role position"
             }
-            
-          //$0.tag = "school"
-        }
+       
+      
         <<< ActionSheetRow<String>() {
             $0.title = "Industry"
             $0.selectorTitle = "Choose your desired industry"
