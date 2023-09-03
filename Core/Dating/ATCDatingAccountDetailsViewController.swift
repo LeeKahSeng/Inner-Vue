@@ -20,7 +20,7 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
     let cancelEnabled: Bool
     
     weak var delegate: ATCDatingAccountDetailsViewControllerDelegate?
-
+    
     init(user: ATCUser,
          manager: ATCDatingProfileEditManager,
          cancelEnabled: Bool) {
@@ -30,11 +30,11 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         super.init(nibName: nil, bundle: nil)
         self.manager.delegate = self
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapDone))
@@ -42,74 +42,74 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(didTapCancel))
         }
         self.manager.fetchDatingProfile(for: user)
-     
+        
         self.title = "Edit Profile"
         if user.isAdmin {
             self.title = "Employer Profile"
-
+            
         }
     }
-
+    
     func profileEditManager(_ manager: ATCDatingProfileEditManager, didFetch datingProfile: ATCDatingProfile) -> Void {
         self.profile = datingProfile
-       
-        form +++ Eureka.Section("Profile Creation")
-            <<< TextRow(){ row in
-                row.title = "First Name"
-                row.placeholder = "Your first name"
-                row.value = datingProfile.firstName
-                row.tag = "firstname"
-            }
-            <<< TextRow(){ row in
-                row.title = "Last Name"
-                row.placeholder = "Your last name"
-                row.value = datingProfile.lastName
-                row.tag = "lastname"
-            }
-            <<< TextRow(){ row in
-             
-                row.title = "Bio"
-                row.placeholder = "Say something about you"
-                row.value = datingProfile.bio
-                row.tag = "bio"
-                if user.isAdmin {
-                    row.title = "Job Description"
-                    row.placeholder = "What are you looking for"
-
-                }
-            }
-     
-            <<< TextRow(){ row in
-                row.title = "Graduation Year "
-                row.placeholder = "e.g. 2021"
-                row.value = datingProfile.age
-                row.tag = "age"
-                if user.isAdmin {
-                    row.value = "18"
-                    row.hidden = true
-                }
-            }
         
-            <<< TextRow(){ row in
-                row.title = "School"
-                row.placeholder = "School"
-                row.value = datingProfile.school
-                row.tag = "school"
-                if user.isAdmin {
-                    row.title = "Company"
-                    row.placeholder = "Company"
-                    row.value = datingProfile.school
-                    
-                }
+        form +++ Eureka.Section("Profile Creation")
+        <<< TextRow(){ row in
+            row.title = "First Name"
+            row.placeholder = "Your first name"
+            row.value = datingProfile.firstName
+            row.tag = "firstname"
+        }
+        <<< TextRow(){ row in
+            row.title = "Last Name"
+            row.placeholder = "Your last name"
+            row.value = datingProfile.lastName
+            row.tag = "lastname"
+        }
+        <<< TextRow(){ row in
+            
+            row.title = "Bio"
+            row.placeholder = "Say something about you"
+            row.value = datingProfile.bio
+            row.tag = "bio"
+            if user.isAdmin {
+                row.title = "Job Description"
+                row.placeholder = "What are you looking for"
+                
             }
-            // MARK: delete if possible
-//        <<< ActionSheetRow<String>() {
-//            $0.title = "Status"
-//            $0.selectorTitle = "Choose your status"
-//            $0.options = ["Job Seeker","Recruiter"]
-//            $0.value = datingProfile.gender
-//            $0.tag = "gender"
-//        }
+        }
+        
+        <<< TextRow(){ row in
+            row.title = "Graduation Year "
+            row.placeholder = "e.g. 2021"
+            row.value = datingProfile.age
+            row.tag = "age"
+            if user.isAdmin {
+                row.value = "18"
+                row.hidden = true
+            }
+        }
+        
+        <<< TextRow(){ row in
+            row.title = "School"
+            row.placeholder = "School"
+            row.value = datingProfile.school
+            row.tag = "school"
+            if user.isAdmin {
+                row.title = "Company"
+                row.placeholder = "Company"
+                row.value = datingProfile.school
+                
+            }
+        }
+        // MARK: delete if possible
+        //        <<< ActionSheetRow<String>() {
+        //            $0.title = "Status"
+        //            $0.selectorTitle = "Choose your status"
+        //            $0.options = ["Job Seeker","Recruiter"]
+        //            $0.value = datingProfile.gender
+        //            $0.tag = "gender"
+        //        }
         <<< ActionSheetRow<String>() {
             $0.title = "Employment Type"
             $0.selectorTitle = "Choose your status"
@@ -119,56 +119,58 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                 $0.title = "Hiring"
                 $0.selectorTitle = "Role position"
             }
-       
-      
+        }
+        
+        
         <<< ActionSheetRow<String>() {
             $0.title = "Industry"
             $0.selectorTitle = "Choose your desired industry"
             $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
-//            $0.value = datingProfile.gender
-          //  $0.tag = "gender"
+            //            $0.value = datingProfile.gender
+            //  $0.tag = "gender"
             
         }
-//            // MARK: Delete if possible
-//            +++ Eureka.Section("Preferences")
-//            <<< ActionSheetRow<String>() {
-//                $0.title = "Status Preference"
-//                $0.selectorTitle = "Match me with "
-//                $0.options = ["Job Seeker", "Recruiter", "Both"]
-//                $0.value = datingProfile.genderPreference
-//                $0.tag = "gender_preference"
-//            }
+        //            // MARK: Delete if possible
+        //            +++ Eureka.Section("Preferences")
+        //            <<< ActionSheetRow<String>() {
+        //                $0.title = "Status Preference"
+        //                $0.selectorTitle = "Match me with "
+        //                $0.options = ["Job Seeker", "Recruiter", "Both"]
+        //                $0.value = datingProfile.genderPreference
+        //                $0.tag = "gender_preference"
+        //            }
         
-            <<< ActionSheetRow<String>() {
-                $0.title = "Location Radius"
-                $0.selectorTitle = "Match me with jobs in this area"
-                $0.options = ["50 miles", "250 miles", "500 miles", "Anywhere in U.S. (Remote)"]
-                $0.value = datingProfile.locationPreference
-                $0.tag = "location_preference"
-            }
+        <<< ActionSheetRow<String>() {
+            $0.title = "Location Radius"
+            $0.selectorTitle = "Match me with jobs in this area"
+            $0.options = ["50 miles", "250 miles", "500 miles", "Anywhere in U.S. (Remote)"]
+            $0.value = datingProfile.locationPreference
+            $0.tag = "location_preference"
+        }
         
-            <<< ActionSheetRow<String>() {
-                $0.title = "Salary"
-                $0.selectorTitle = "Choose your desired Salary"
-                $0.options = ["$40-60K","$60-80K", "$80-100K", "$100K+"]
+        <<< ActionSheetRow<String>() {
+            $0.title = "Salary"
+            $0.selectorTitle = "Choose your desired Salary"
+            $0.options = ["$40-60K","$60-80K", "$80-100K", "$100K+"]
             //                $0.value = datingProfile.gender
             //                $0.tag = "gender"
-                if user.isAdmin {
-                    $0.title = "Hiring Budget"
-                    $0.selectorTitle = "Select job budget"
-                }
+            if user.isAdmin {
+                $0.title = "Hiring Budget"
+                $0.selectorTitle = "Select job budget"
             }
+        }
         
         
-            +++ Eureka.Section("Private Details")
-            <<< TextRow(){ row in
-                row.title = "E-mail Address"
-                row.placeholder = "Your e-mail address"
-                row.value = datingProfile.email
-                row.tag = "email"
+        +++ Eureka.Section("Private Details")
+        <<< TextRow(){ row in
+            row.title = "E-mail Address"
+            row.placeholder = "Your e-mail address"
+            row.value = datingProfile.email
+            row.tag = "email"
         }
     }
-
+    
+    
     func profileEditManager(_ manager: ATCDatingProfileEditManager, didUpdateProfile success: Bool) -> Void {
         if (success) {
             delegate?.accountDetailsVCDidUpdateProfile()
@@ -181,10 +183,10 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             self.present(alert, animated: true)
         }
     }
-
+    
     @objc private func didTapDone() {
         guard let profile = profile else { return }
-
+        
         var lastName = ""
         var firstName = ""
         var email = ""
@@ -194,7 +196,7 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         var gender = ""
         var genderPreference = ""
         var locationPreference = ""
-
+        
         if let row = form.rowBy(tag: "lastname") as? TextRow {
             lastName = row.value ?? ""
         }
@@ -222,16 +224,16 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         if let row = form.rowBy(tag: "location_preference") as? ActionSheetRow<String> {
             locationPreference = row.value ?? ""
         }
-
+        
         // MARK: Avoid pop up
-//        if school == "" || email == "" || age == "" || firstName == "" || gender == "" || genderPreference == "" {
-//            let alertVC = UIAlertController(title: "Please complete your profile",
-//                                            message: "Fill out all the blank fields",
-//                                            preferredStyle: .alert)
-//            alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//            self.present(alertVC, animated: true, completion: nil)
-//            return
-//        }
+        //        if school == "" || email == "" || age == "" || firstName == "" || gender == "" || genderPreference == "" {
+        //            let alertVC = UIAlertController(title: "Please complete your profile",
+        //                                            message: "Fill out all the blank fields",
+        //                                            preferredStyle: .alert)
+        //            alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        //            self.present(alertVC, animated: true, completion: nil)
+        //            return
+        //        }
         self.manager.update(profile: profile,
                             email: email,
                             firstName: firstName,
@@ -243,7 +245,7 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                             genderPreference: genderPreference,
                             locationPreference: locationPreference)
     }
-
+    
     @objc private func didTapCancel() {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
