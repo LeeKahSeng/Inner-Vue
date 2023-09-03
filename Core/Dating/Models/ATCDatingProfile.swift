@@ -24,6 +24,8 @@ class ATCDatingProfile: ATCUser {
     var limitedTime: String?
     var numberOfSwipes: Int = 0
     
+    var industry: String? = nil
+    
     public init(uid: String = "abc",
                 firstName: String,
                 lastName: String,
@@ -68,6 +70,7 @@ class ATCDatingProfile: ATCUser {
         self.endVipDate = representation["endVipDate"] as? String
         self.numberOfSwipes = (representation["numberOfSwipes"] as? Int) ?? 0
         self.limitedTime = representation["limitedTime"] as? String
+        self.industry = representation["industry"] as? String
     }
 
     required public init(jsonDict: [String : Any]) {

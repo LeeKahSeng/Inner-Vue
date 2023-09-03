@@ -126,9 +126,8 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             $0.title = "Industry"
             $0.selectorTitle = "Choose your desired industry"
             $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
-            //            $0.value = datingProfile.gender
-            //  $0.tag = "gender"
-            
+            $0.value = datingProfile.industry
+            $0.tag = "industry"
         }
         //            // MARK: Delete if possible
         //            +++ Eureka.Section("Preferences")
@@ -196,6 +195,7 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         var gender = ""
         var genderPreference = ""
         var locationPreference = ""
+        var industry = ""
         
         if let row = form.rowBy(tag: "lastname") as? TextRow {
             lastName = row.value ?? ""
@@ -224,6 +224,9 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         if let row = form.rowBy(tag: "location_preference") as? ActionSheetRow<String> {
             locationPreference = row.value ?? ""
         }
+        if let row = form.rowBy(tag: "industry") as? ActionSheetRow<String> {
+            industry = row.value ?? ""
+        }
         
         // MARK: Avoid pop up
         //        if school == "" || email == "" || age == "" || firstName == "" || gender == "" || genderPreference == "" {
@@ -243,7 +246,8 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                             school: school,
                             gender: gender,
                             genderPreference: genderPreference,
-                            locationPreference: locationPreference)
+                            locationPreference: locationPreference,
+                            industry: industry)
     }
     
     @objc private func didTapCancel() {
