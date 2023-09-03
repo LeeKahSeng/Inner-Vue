@@ -33,7 +33,9 @@ class ATCDatingFirebaseProfileEditManager: ATCDatingProfileEditManager {
                 gender: String,
                 genderPreference: String,
                 locationPreference: String,
-                industry: String) {
+                industry: String,
+                employmentType: String,
+                salary: String) {
         guard let uid = profile.uid else { return }
         let profileRef = Firestore.firestore().collection("users").document(uid)
         let newData = [
@@ -47,7 +49,9 @@ class ATCDatingFirebaseProfileEditManager: ATCDatingProfileEditManager {
             "gender": gender,
             "genderPreference": genderPreference,
             "locationPreference": locationPreference,
-            "industry": industry
+            "industry": industry,
+            "employmentType": employmentType,
+            "salary": salary
         ]
         profileRef.setData(newData, merge: true) {[weak self] (error) in
             guard let `self` = self else { return }

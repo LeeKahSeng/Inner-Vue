@@ -114,7 +114,8 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             $0.title = "Employment Type"
             $0.selectorTitle = "Choose your status"
             $0.options = ["Part time","Full time","Internship","Co-op"]
-            $0.value = datingProfile.gender
+            $0.value = datingProfile.employmentType
+            $0.tag = "employment_type"
             if user.isAdmin {
                 $0.title = "Hiring"
                 $0.selectorTitle = "Role position"
@@ -151,8 +152,8 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
             $0.title = "Salary"
             $0.selectorTitle = "Choose your desired Salary"
             $0.options = ["$40-60K","$60-80K", "$80-100K", "$100K+"]
-            //                $0.value = datingProfile.gender
-            //                $0.tag = "gender"
+            $0.value = datingProfile.salary
+            $0.tag = "salary"
             if user.isAdmin {
                 $0.title = "Hiring Budget"
                 $0.selectorTitle = "Select job budget"
@@ -196,6 +197,8 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         var genderPreference = ""
         var locationPreference = ""
         var industry = ""
+        var employmentType = ""
+        var salary = ""
         
         if let row = form.rowBy(tag: "lastname") as? TextRow {
             lastName = row.value ?? ""
@@ -227,6 +230,12 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
         if let row = form.rowBy(tag: "industry") as? ActionSheetRow<String> {
             industry = row.value ?? ""
         }
+        if let row = form.rowBy(tag: "employment_type") as? ActionSheetRow<String> {
+            employmentType = row.value ?? ""
+        }
+        if let row = form.rowBy(tag: "salary") as? ActionSheetRow<String> {
+            salary = row.value ?? ""
+        }
         
         // MARK: Avoid pop up
         //        if school == "" || email == "" || age == "" || firstName == "" || gender == "" || genderPreference == "" {
@@ -247,7 +256,9 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                             gender: gender,
                             genderPreference: genderPreference,
                             locationPreference: locationPreference,
-                            industry: industry)
+                            industry: industry,
+                            employmentType: employmentType,
+                            salary: salary)
     }
     
     @objc private func didTapCancel() {

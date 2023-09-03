@@ -26,7 +26,9 @@ protocol ATCDatingProfileEditManager: class {
                 gender: String,
                 genderPreference: String,
                 locationPreference: String,
-                industry: String) -> Void
+                industry: String,
+                employmentType: String,
+                salary: String) -> Void
     func updateVipAccount(profile: ATCDatingProfile?,
                           isVipAccount: Bool,
                           startVipAccountDate: Date?,
