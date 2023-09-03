@@ -69,12 +69,24 @@ class ATCDatingFeedFirebaseDataSource: ATCDatingFeedDataSource {
                     guard let querySnapshot = querySnapshot else {
                         return
                     }
+                    
                     var users: [ATCDatingProfile] = []
                     let documents = querySnapshot.documents
                     for document in documents {
                         let data = document.data()
                         let user = ATCDatingProfile(representation: data)
+         
                         if user.uid != viewer.uid {
+                        
+                            // Ensure the users are match with the viewer
+                            // Ensure employer do not see employer. Same goes to job seeker
+                            guard
+                                viewer.industry == user.industry &&
+                                viewer.employmentType == user.employmentType &&
+                                viewer.salary == user.salary &&
+                                viewer.isAdmin != user.isAdmin else {
+                                continue
+                            }
                             users.append(user)
                         }
                     }
