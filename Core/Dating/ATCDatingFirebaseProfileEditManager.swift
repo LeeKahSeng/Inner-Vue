@@ -56,6 +56,17 @@ class ATCDatingFirebaseProfileEditManager: ATCDatingProfileEditManager {
         profileRef.setData(newData, merge: true) {[weak self] (error) in
             guard let `self` = self else { return }
             self.delegate?.profileEditManager(self, didUpdateProfile: (error == nil))
+            
+            // Post notification to inform account details is updated
+            let usersRef = Firestore.firestore().collection("users").document(uid)
+            usersRef.getDocument {[weak self] (snapshot, error) in
+                guard let `self` = self else { return }
+                guard let snapshot = snapshot, let data = snapshot.data() else { return }
+                let newUserProfile = ATCDatingProfile(representation: data)
+                
+                // Post the notification
+                NotificationCenter.default.post(name: .accountDetailsDidUpdated, object: newUserProfile)
+            }
         }
     }
     
@@ -83,5 +94,12 @@ class ATCDatingFirebaseProfileEditManager: ATCDatingProfileEditManager {
         profileRef.setData(newData, merge: true) {(error) in
             completionHandler(error)
         }
+    }
+}
+
+extension Notification.Name {
+    
+    static var accountDetailsDidUpdated: Notification.Name {
+        return .init(rawValue: "ATCDatingFirebaseProfileEditManager.AccountDetailsDidUpdated")
     }
 }

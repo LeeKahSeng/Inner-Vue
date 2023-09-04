@@ -81,6 +81,14 @@ class DatingFeedViewController: UIViewController {
         actionsContainerView.backgroundColor = .clear
         view.backgroundColor = uiConfig.mainThemeBackgroundColor
         self.dataSource.loadTop()
+        
+        // Observe notification when account details updated
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(accountDetailsDidUpdated(_:)),
+            name: .accountDetailsDidUpdated,
+            object: nil
+        )
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -133,6 +141,19 @@ class DatingFeedViewController: UIViewController {
 //                                      type: type)
 //        }
 //    }
+    
+    @objc private func accountDetailsDidUpdated(_ notification: Notification) {
+       
+        guard let userProfile = notification.object as? ATCDatingProfile else {
+            return
+        }
+        
+        update(user: userProfile)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
 extension DatingFeedViewController : ATCGenericCollectionViewControllerDataSourceDelegate {
@@ -143,8 +164,15 @@ extension DatingFeedViewController : ATCGenericCollectionViewControllerDataSourc
     }
     
     func genericCollectionViewControllerDataSource(_ dataSource: ATCGenericCollectionViewControllerDataSource, didLoadTop objects: [ATCGenericBaseModel]) {
-        kolodaView.delegate = self
-        kolodaView.dataSource = self
+        
+        if kolodaView.delegate == nil {
+            // Load top finish for the first time, load the kolodaView
+            kolodaView.delegate = self
+            kolodaView.dataSource = self
+        } else {
+            // Load top finished due to user profile updated, reload the kolodaView
+            kolodaView.resetCurrentCardIndex()
+        }
     }
 }
 
@@ -268,9 +296,12 @@ extension DatingFeedViewController: KolodaViewDataSource {
 
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         if let profile = dataSource.object(at: index) as? ATCDatingProfile, let viewer = viewer {
-            if let previousVC = viewControllers[index] {
-                return previousVC.view
-            }
+            
+            // What is the purpose of this?
+//            if let previousVC = viewControllers[index] {
+//                return previousVC.view
+//            }
+            
             let feedItemVC = DatingFeedItemViewController(profile: profile,
                                                           viewer: viewer,
                                                           uiConfig: uiConfig,
